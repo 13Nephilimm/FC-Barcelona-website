@@ -1,0 +1,199 @@
+/***********************************/
+/* HEADER */
+/***********************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d98;
+  position: relative;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.barca:link,
+.barca:visited {
+  text-decoration: none;
+  color: #edbb00;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.barca:hover,
+.barca:active {
+  cursor: pointer;
+  color: #edbb00;
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+/***********************************/
+/* NAVIGATION */
+/***********************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #edbb00;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all 0.4s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #be9600;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #333;
+  background-color: #edbb00;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #be9600;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/***********************************/
+/* SECTION STADIUM */
+/***********************************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #d280a2;
+  overflow-x: hidden;
+}
+
+.main-header {
+  color: #edbb00;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
+.section-stadium {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  column-gap: 3.2rem;
+  row-gap: 1rem;
+  margin-top: 8rem;
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.stadium-img {
+  width: 100%;
+  border: 3px solid #004d98;
+  border-radius: 11px;
+  justify-self: center;
+}
+
+.text-box {
+  width: 100%;
+}
+
+.stadium-text {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-right: 1.6rem;
+  color: #eee;
+  padding: 2.4rem;
+}
+
+/***********************************/
+/* FOOTER */
+/***********************************/
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #eee;
+  margin-top: 8rem;
+}
+
+.footer {
+  margin-top: 4.8rem;
+  padding: 9.6rem;
+  border-top: 1px solid #004d98;
+}
+
+.footer-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.footer-header {
+  color: #edbb00;
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.logo {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.ig {
+  color: #a50044;
+}
+
+.fb {
+  color: #004d98;
+}

@@ -1,0 +1,372 @@
+/***********************************/
+/* HEADER */
+/***********************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004D98;
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.barca {
+    color: #EDBB00;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.barca:hover {
+    cursor: pointer;
+}
+
+/***********************************/
+/* NAVIGATION */
+/***********************************/
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #EDBB00;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: all 0.4s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #be9600;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #333;
+    background-color: #EDBB00;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #be9600;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+/* STICKY NAVIGATION */
+
+.sticky .header {
+    background-color: rgba(0, 76, 152, 0.97);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 888;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  }
+  
+  .sticky .section-hero {
+    margin-top: 9.6rem;
+  }
+
+/***********************************/
+/* HERO SECTION */
+/***********************************/
+
+.section-hero {
+    background-color: #004D98;
+    padding: 4.8rem 0 9.6rem 0;
+    height: 88rem;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    column-gap: 20rem;
+}
+
+.hero-description {
+    margin-top: 8rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    color: #fff;
+}
+
+.hero-img {
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.supporters {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.fans-imgs {
+    display: flex;
+}
+
+.fans-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #004D98;
+}
+
+.fans-imgs img:last-child {
+    margin: 0;
+}
+
+.fan-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.fan-text span {
+    color: #EDBB00;
+    font-weight: 700;
+}
+
+/***********************************/
+/* SPONSORS */
+/***********************************/
+
+.section-sponsors {
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-sponsors {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #888;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+/***********************************/
+/* SECTION TROPHIES */
+/***********************************/
+
+.section-trophies {
+    margin-top: 8rem;
+    padding: 9.6rem 0;
+}
+
+.step-number--blue,
+.step-number--red {
+    font-size: 8.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.step-number--blue {
+    color: #004D98;
+}
+
+.step-number--red {
+    color: #A50044;
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-trophies {
+    display: grid;
+    column-gap: 16rem;
+    row-gap: 16rem;
+}
+
+.step-img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #004D98;
+    z-index: -2;
+}
+
+.step-img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #A50044;
+    z-index: -1;
+}
+
+.step-img {
+    width: 35%;
+}
+
+/***********************************/
+/* ICONIC SECTION */
+/***********************************/
+
+.section-iconic {
+    background-color: #f6e6ec;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+
+.iconic-container {
+    padding: 9.6rem;
+}
+
+.iconics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.iconic-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    mask-border: 1.2rem;
+}
+
+.iconic-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    mask-border: 1.6rem;
+}
+
+.iconic-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/***********************************/
+/* FOOTER */
+/***********************************/
+
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: 8rem;
+}
+
+.footer {
+    padding: 9.6rem;
+}
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0; 
+}
+
+.footer-header {
+    color: #be9600;
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.logo {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.ig {
+    color: #A50044;
+}
+
+.fb {
+    color: #004D98;
+}
+

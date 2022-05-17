@@ -1,0 +1,128 @@
+/***********************************/
+/* BELOW 1872px (Smaller Desktops) */
+/***********************************/
+
+@media (max-width: 117em) {
+  .section-stadium {
+    grid-template-columns: 1fr;
+    column-gap: 1.2rem;
+  }
+
+  .img-box:first-child {
+    width: auto;
+  }
+
+  .text-box {
+    margin-top: 4.8rem;
+  }
+}
+
+/***********************************/
+/* BELOW 1360px (Landscape Tablets) */
+/***********************************/
+
+@media (max-width: 85em) {
+  .section-stadium {
+    padding: 8rem;
+  }
+
+  .text-box {
+    margin-top: 2.4rem;
+  }
+}
+
+/***********************************/
+/* BELOW 1104px (Tablets) */
+/***********************************/
+
+@media (max-width: 69em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav {
+    background-color: rgba(0, 76, 152, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide Navigation */
+
+    /* 1) Visually */
+    opacity: 0;
+
+    /* 2) Mouse & Keyboard */
+    pointer-events: none;
+
+    /* 3) Screen Readers */
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 1000;
+  }
+}
+
+/***********************************/
+/* BELOW 896px (Smaller Tablets) */
+/***********************************/
+
+@media (max-width: 56em) {
+  .stadium-img,
+  .img-box {
+    height: 50rem;
+  }
+
+  .section-stadium {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+}
+
+/***********************************/
+/* BELOW 496px (Phones) */
+/***********************************/
+
+@media (max-width: 31em) {
+  .stadium-text {
+    font-size: 1.2rem;
+  }
+}
