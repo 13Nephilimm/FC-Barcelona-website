@@ -1,4 +1,4 @@
-FC BARCELONA Website!!!
+FC Barcelona FULLY-RESPONSIVE Website!!!
 
 Built By me using simple HTML and CSS. (little bit JS)
 
