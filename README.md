@@ -1,5 +1,7 @@
 FC BARCELONA Website!!!
 
+Built By me using simple HTML and CSS. (little bit JS)
+
 Do u like football? Then this webpage is probably for you...
 
 LINK: https://nephilims-barca.netlify.app
